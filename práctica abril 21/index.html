@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica JS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h2>Conceptos básicos de JS</h2>
+    <!--Fragmento de JS-->
+    <script> 
+        document.write("<p>Imprimir lo almacenado en una variable (alert)(document).</p>");
+        document.write("<p>Isabela Ceballos Franco.</p>");
+
+        console.log("Hello console");
+        //para crear variables 
+        var nombre= "Isabela";
+        var edad= 19;
+
+        alert(nombre + "-" + edad);
+
+        //let, para crear variables locales
+        let apellido = "Ceballos";
+        alert(apellido);
+
+        document.write("<p>La persona " + nombre + " " + apellido + " tiene una edad de " + edad + " años");
+
+            function myFunction(){
+                if(true){
+                    var valor1= "JavaScript"; // de tipo función, se usa por fuera del bloque, del if
+                    let valor2= "React"; //estos dos son de tipo bloque, solo estan en el contexto del if
+                    const valor3= "Angular"; // no se le puede cambiar el valor asignado
+                //frente al const, puedo modificar la constante por medio de métodos más no el tipo de dato.
+                }
+
+                console.log(valor1);
+            }
+            //invoco función
+            myfunction();  
+            
+            function add(num1, num2){
+                return num1+num2;
+            }
+            //asi llamo a la función
+            document.write(add(10,5));
+
+            //función anónima
+            //se usan cuando estamos haciendo eventos
+            const suma = function(num1,num2){
+                return num1+num2;
+            };
+            //asi la invoco
+            document.write("<p>", suma(3,7));
+
+            //función autoinvocada
+                (function(){
+                    document.write("<p", add(10,5));
+                    //alert("Hello world");
+                })();
+            //ella se ejecuta sola
+
+    </script>
+    <br>
+    <button onclick="alert('Hello World')">Alert</button>
+    <!--Anclar la página a JS-->
+    <script src="JS/javascript.js"></script>
+</body>
+</html>

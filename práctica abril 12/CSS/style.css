@@ -1,0 +1,21 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count:infinite; 
+}
+@keyframes movement{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        
+    }
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background: #9eb3c2;
+    animation: movement 10s infinite;
+}
