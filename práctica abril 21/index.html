@@ -61,6 +61,38 @@
                 })();
             //ella se ejecuta sola
 
+            //vectores
+            var id=[123,234,345,456,567];
+            var nombre=["luisa", "Andres", "Paola", "Camila", "Sergio"];
+            var apellidos=["Jimenez", "Ramirez", "Giraldo Lopez", "Gutierrez", "Castro", "Gomez"];
+
+            document.write("<hr>");
+
+            document.write("<p><h2>Búsqueda de información en arreglos</h2></p>");
+
+            function nombreApellidos(indice){
+                return "<b style='color:red'>La persona seleccionada es: </b>" + nombre[indice] + " " + apellidos[indice];
+            }
+            document.write(nombreApellidos(2));
+            document.write("<hr>");
+
+            //id.push(i) -> agrego al vector un elemento
+            //id.sort(i) ->ordenar los elementos del arreglo
+
+            let opcion=1;
+
+            switch(opcion){
+                case 0:
+                    document.write("esta es la opción");
+                    break;
+                default:
+                    document.write("opc incorrecta");
+                    break;
+            }
+
+            for(i in apellidos){
+                document.write(apellidos[i] + "<br>");
+            }
     </script>
     <br>
     <button onclick="alert('Hello World')">Alert</button>
